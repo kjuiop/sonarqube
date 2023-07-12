@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @author : JAKE
  * @date : 2023/07/12
  */
-@Slf4j
 @RestController
 @RequiredArgsConstructor
 public class HelloController {
@@ -24,8 +23,6 @@ public class HelloController {
         if (!StringUtils.hasText(name)) {
             throw new IllegalArgumentException();
         }
-
-        System.out.println("dfasdfsfdas");
 
         return helloService.sayHello(name);
     }
