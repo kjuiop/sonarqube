@@ -63,11 +63,6 @@ jacocoTestReport {
 
 sonar {
     properties {
-        property "sonar.projectKey", "sonarqube"
-        property "sonar.projectName", "sonarqube"
-        property "sonar.projectVersion", "1.1"
-        property "sonar.host.url", System.getenv("SONAR_URL")
-        property "sonar.token", System.getenv("SONAR_TOKEN")
         property "sonar.sources", "src"
         property "sonar.language", "java"
         property "sonar.sourceEncoding", "UTF-8"
