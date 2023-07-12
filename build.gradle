@@ -61,7 +61,7 @@ jacocoTestReport {
 
 }
 
-sonar {
+sonarqube {
     properties {
         property "sonar.sources", "src"
         property "sonar.language", "java"
