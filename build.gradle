@@ -24,6 +24,7 @@ configurations {
 
 dependencies {
 
+    /** spring **/
     implementation 'org.springframework.boot:spring-boot-starter-web'
     annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
@@ -34,11 +35,9 @@ dependencies {
 
     /** DB **/
     runtimeOnly 'com.h2database:h2'
-    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.19'
 
-    /** **/
-    implementation 'com.google.code.gson:gson:2.8.7'
-
+    /** TEST **/
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
