@@ -2,6 +2,7 @@ package io.gig.sonarqube.controller;
 
 import io.gig.sonarqube.service.HelloService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author : JAKE
  * @date : 2023/07/12
  */
+@Slf4j
 @RestController
 @RequiredArgsConstructor
 public class HelloController {
@@ -22,6 +24,8 @@ public class HelloController {
         if (!StringUtils.hasText(name)) {
             throw new IllegalArgumentException();
         }
+
+        System.out.println("dfasdfsfdas");
 
         return helloService.sayHello(name);
     }

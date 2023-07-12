@@ -12,7 +12,7 @@ import org.springframework.http.ResponseEntity;
  * @author : JAKE
  * @date : 2023/07/12
  */
-public class HelloApiTest {
+class HelloApiTest {
 
     @Test
     void helloApi() {
